@@ -62,7 +62,7 @@ const ComputersCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
       className="pt-16"
     >
-      <Suspense fallback={<CanvasLoader />}>
+      <Suspense fallback={!isMobile ? <CanvasLoader /> : null}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
