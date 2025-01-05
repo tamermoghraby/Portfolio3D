@@ -7,7 +7,7 @@ import { technologies } from "../constants";
 const Tech = () => {
   const isMobile = window.innerWidth <= 768;
   const filteredTechnologies = isMobile
-    ? technologies.slice(6, 11)
+    ? technologies.slice(6, 12)
     : technologies;
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
