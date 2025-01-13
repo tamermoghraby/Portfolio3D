@@ -28,7 +28,7 @@ const Hero = () => {
     };
   }, []);
   return (
-    <section className={`relative w-full h-[60vh] md:h-screen mx-auto`}>
+    <section className={`relative w-full h-[70vh] md:h-screen mx-auto`}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -53,7 +53,7 @@ const Hero = () => {
 
       <div className="absolute xs:bottom-10 bottom-4 w-full flex justify-center items-center">
         <a href="#about" className="z-10">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+          <div className="w-8 h-16 md:w-[35px] md:h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -63,7 +63,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-3 h-3 rounded-full bg-secondary mb-1"
+              className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-secondary mb-1"
             />
           </div>
         </a>
